@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table, td, th {
+            border: 1px solid darkviolet;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+    </style>
+    <title>Database</title>
+</head>
+<body>
+    
+    <center>
+        <table>
+            <thead>
+                <td>
+                    <center><h1>Penghuni Kos</h1></center>
+                    Nama:  <input type="text" id="name"><br><br>
+                    Usia: <input type="number" id="usia"><br><br>
+                    Gender: Pria <input type="radio" name="gender" value="Pria" checked> Wania <input type="radio" name="gender" value="Wanita"><br><br>
+                    Pekerjaan: <input type="text" id="pekerjaan"><br><br>
+                    <input type="button" value="Submit" onclick="onSubmitClick()"><br>
+            
+                </td>
+            </thead>
+            
+        </table>
+        <br><input type="button" value="Nama" onclick="onNamaClick()">
+        <input type="button" value="Usia" onclick="onUsiaClick()">
+        <input type="button" value="Gender" onclick="onGenderClick()">
+        <input type="button" value="Pekerjaan" onclick="onPekerjaanClick()"><br><br>
+        <table>
+            <thead>
+                <th>No.</th>
+                <th>Nama</th>
+                <th>Usia</th>
+                <th>Gender</th>
+                <th>Pekerjaan</th>
+            </thead>
+            <tbody id="content">
+
+            </tbody>
+        </table>
+    </center>
+</body>
+<script src="./sortir.js"></script>
+</html>
